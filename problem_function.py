@@ -1,5 +1,8 @@
+empty = []
+
+
 class Function:
-    empty = []
+
 
     def getmyaverage(self, x, y):
         return (x+y)/2
@@ -13,6 +16,7 @@ class Function:
         return sum(range(start, end+1))
 
     def getText(self, text_list):
+        global empty
         for i in text_list:
             self.empty.append(i[0:3])
         return self.empty

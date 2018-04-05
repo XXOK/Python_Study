@@ -6,7 +6,6 @@ class Point:
 
     def setx(self, x):
         self.x = x
-
     def sety(self, y):
         self.y = y
 
@@ -14,7 +13,7 @@ class Point:
         return str(point) + "km"
 
     def get(self):
-        return self.pointToString(self.x) + "," + self.pointToString(str(self.y))
+        return self.pointToString(self.x) + "," + self.pointToString(self.y)
 
     def move(self, dx, dy):
         self.x += dx
@@ -23,7 +22,10 @@ class Point:
 if __name__ == '__main__':
 
     claxx = Point(5,10)
-    claxx.move(5, 0)
+    claxx.setx(10)
+    # claxx.move(5, 0)
+
+    print("안녕", claxx.get())
 
     if claxx.x >= 5:
         print("검색한 위치는 서울입니다.")
